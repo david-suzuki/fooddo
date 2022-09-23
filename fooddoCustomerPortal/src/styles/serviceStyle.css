@@ -1,0 +1,38 @@
+.servicePage {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  height: 100%;
+}
+.servicesContainer {
+  padding: 1rem;
+  max-width: 500px;
+  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.service {
+  padding: 1.5rem;
+  width: 7rem;
+  margin: 2rem 1rem 5px 1rem;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 2px solid #000;
+}
+.service > img {
+  filter: brightness(50%) sepia(1);
+  max-width: 3.5rem;
+}
+.service > span {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  color: var(--mainColor);
+}

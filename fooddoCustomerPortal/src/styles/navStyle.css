@@ -1,0 +1,193 @@
+.nav {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: #fff;
+  z-index: 10;
+}
+.stick {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  position: fixed;
+}
+.stickyNav {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  padding: 1rem 0.5rem;
+}
+.stickyNavleft {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+.stickyNavleft > i {
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+.stickyNavHeading {
+  font-size: 1.2rem;
+}
+.navcontainer {
+  padding: 1rem;
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.maincontent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1rem;
+  flex-direction: column;
+}
+.navleft {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menubar {
+  display: flex;
+}
+.menuIcon {
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.hotelInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navdesc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info_image {
+  object-fit: contain;
+  border-radius: 5px;
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+}
+.navName {
+  font-size: 1.2rem;
+}
+.navNumber {
+  font-size: 1rem;
+  color: var(--mainColor);
+}
+.navAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  max-height: 1.7rem;
+  overflow: hidden;
+  transition: all 0.3s all ease-in-out;
+}
+.fa-phone {
+  color: #111;
+}
+.showAddress {
+  max-height: 6rem;
+}
+.navAddress > h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.addF {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: row;
+  transition: 400ms all ease-in-out;
+  align-items: center;
+}
+.addF > h1 {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+.show-icon {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3rem;
+  border-radius: 100%;
+  transition: 400ms all ease-in-out;
+  color: var(--mainColor);
+  transform: rotate(-90deg);
+}
+.more-details > h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.more-details > p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #616161;
+}
+.open {
+  transform: rotate(0deg);
+}
+/* nav right */
+.searchbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.searchbar > i {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.7rem;
+  color: var(--mainColor);
+}
+.searchbar > input {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 0.8rem;
+  outline: none;
+}
+
+.backButton {
+  background-color: Transparent;
+  border: none;
+}
+@media screen and (max-width: 780px) {
+  .searchbar > i {
+    left: 0.8rem;
+  }
+  .navleft {
+    flex-direction: column;
+  }
+  .searchbar {
+    padding-left: 0;
+  }
+  .navdesc {
+    margin-top: 0.5rem;
+  }
+  .navcontainer {
+    padding: 1rem 0.8rem;
+  }
+}

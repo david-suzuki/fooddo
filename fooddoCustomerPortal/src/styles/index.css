@@ -1,0 +1,97 @@
+@import url("./navStyle.css");
+@import url("./menuStyle.css");
+@import url("./cartstyle.css");
+@import url("./serviceStyle.css");
+@import url("./order.css");
+@import url("./schedule.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --mainColor: #4ac959;
+}
+body {
+  background: rgb(230, 230, 230);
+}
+.main {
+  display: flex;
+  width: 100%;
+}
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+.container > p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  position: fixed;
+  left: -9999px;
+  transition: 1s all ease-in-out;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.459);
+}
+.sideopen {
+  transition: 1s all ease-in-out;
+  left: 0;
+}
+.sidebarContainer {
+  max-width: 600px;
+  position: relative;
+  transition: 1s all ease-in-out;
+  height: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.733);
+}
+.time-icon {
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+  border: none;
+  padding: 0.5rem;
+  top: 2rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.links {
+  display: flex;
+  margin-top: 2rem;
+  color: #fff;
+  flex-direction: column;
+}
+.links > h1 {
+  margin-bottom: 1rem;
+}
+.links > a {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.active {
+  border-bottom: 2px solid rgb(56, 159, 255);
+  width: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+.date-picker-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-picker {
+  width: 45% !important;
+}

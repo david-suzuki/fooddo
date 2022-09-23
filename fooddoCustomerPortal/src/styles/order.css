@@ -1,0 +1,252 @@
+.smallNav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  background: #fff;
+  top: 0;
+}
+.search {
+  width: 100%;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+.orderhistory {
+  width: 100%;
+  flex-direction: column;
+  background: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+.orders {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+.order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(220, 220, 220);
+}
+.ordermenu {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1rem;
+}
+.ordermenu > img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+.orderdetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+.orderresturant {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.orderresturant > h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.orderresturant > h3 {
+  font-size: 0.8rem;
+  color: #777;
+  padding: 0.2rem 0;
+}
+.orderresturant > h3 > span {
+  color: #777;
+  margin-right: 0.2rem;
+}
+.orderactions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.orderactions > button {
+  border-radius: 0.5rem;
+  color: #333;
+  border: none;
+  padding: 0.5rem 0.4rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.orderactions > a {
+  text-decoration: none;
+  color: var(--mainColor);
+  font-size: 0.9rem;
+}
+.orderactions > i {
+  margin-left: 0.5rem;
+}
+.ordertime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(240, 240, 240);
+  border-top: 1px dashed rgb(220, 220, 220);
+}
+.ordertimeorice {
+  color: var(--mainColor);
+}
+.ordertime > h1 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #333;
+}
+.ordertime > h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+.ordersummary {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+.ordersummary > h1 {
+  font-size: 1.1rem;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+}
+.summary > h1 {
+  font-size: 1.1rem;
+  padding-top: 0.5rem;
+}
+.summary > h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+  padding: 0.5rem 0;
+}
+.summary > h5 {
+  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #444;
+}
+.summary > h5 > span {
+  color: #444;
+}
+
+.summary > h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.yourOrder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.yourOrder > h1 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+.ordername {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.ordername > img {
+  width: 1rem;
+}
+.ordername > h3 {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.orderpricetag {
+  display: flex;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  align-items: center;
+  padding: 1rem 0;
+  justify-content: space-between;
+  width: 100%;
+}
+.quantityAndPrice {
+  display: flex;
+  align-items: center;
+}
+.quantityAndPrice > button {
+  font-size: 0.8rem;
+  border: 1px solid var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  color: rgb(0, 0, 0);
+  padding: 0.1rem 0.4rem;
+  background: #4ac95927;
+  margin-right: 0.2rem;
+  font-weight: 500;
+}
+.totalQuantityPrice > h4,
+.quantityAndPrice > h4 {
+  padding-left: 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.lastTotal > h4 {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.lastTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.repeatorder {
+  display: flex;
+  width: 92%;
+  height: 3.2rem;
+  border: none;
+  background-color: var(--mainColor);
+  color: #fff;
+  position: fixed;
+  bottom: 2rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  left: 1rem;
+  align-items: center;
+}
+.rspan {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.lspan {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
